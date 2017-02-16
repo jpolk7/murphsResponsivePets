@@ -1,16 +1,14 @@
 /*
 ** CSS below just for debug purposes
 
-section {
-	border: 1px solid orange;
-}
 div {
 	border: 1px solid grey;
 	
 }
 */
 
-/* change to use border-box sizing reset
+
+/* change to use border-box sizing 
 */
 html {
   height: 100%;
@@ -26,7 +24,7 @@ html {
 body {
   	position: relative;
   	margin: 0;
-  	padding-bottom: 6rem;
+  	padding-bottom: 2rem;
   	min-height: 100%;
 
   	font-family: 'Open Sans', sans-serif;
@@ -35,15 +33,14 @@ body {
 
 
 
-/* begin production (non debug) CSS  */
 #headerDiv {
-	width: 70%;
+	width: 85%;
 	margin: 0 auto;
 }
 
 h1 {
 	color: navy;
-	font-size: 3em;
+	font-size: 3rem;
 	font-weight: bold;
 	max-width: 100%;
 	margin: 0 auto;
@@ -51,9 +48,9 @@ h1 {
 }
 
 .sectionHeader {
-	margin-left: 2em;
+	margin-left: 2rem;
 	color: orange;
-	font-size: 2em;
+	font-size: 2rem;
 	font-weight: bold;
 	text-align: left;
 }
@@ -69,7 +66,7 @@ h1 {
 
 .petDiv {
 	display: inline-block;
-	min-height: 10em;
+	min-height: 15rem;
 	width: 32%;
 	margin: 0 auto;
 	background-size: cover;
@@ -89,19 +86,21 @@ h1 {
 	
 }
 
+
+
 #adoptText {
-	margin-left: 3em;
+	margin-left: 3rem;
 }
 
 footer {
-	margin-top: 5em;
+	margin-top: 5rem;
 }
 
 #footerCopyright {
 	text-align: center;
 	width: 30%;
 	margin: 0 auto;
-	font-size: .8em;
+	font-size: .8rem;
 
 	position: absolute;
   	right: 0;
@@ -112,13 +111,10 @@ footer {
 
 
 /* responsive media tags */
+/* make your site responive so that it looks good on various popular phones such as
+** the iphone 5, iphone 6, nexus 6P, and iPad. The smallest of these is the iphone5 which
+** has a width of 320 pixels 
+*/
 @media only screen and (max-width: 600px) {
-
-	h1 {
-		font-size: 2em;
-	}
-
-	#headerDiv {
-		width: 75%;
-	}
+	
 }
