@@ -65,7 +65,7 @@ h1 {
 .petDiv {
 	display: inline-block;
 	min-height: 15rem;
-	min-width: 15rem;
+	min-width: 13.7rem;
 	width: 32%;
 	margin: 0 auto;
 	background-size: cover;
@@ -99,6 +99,8 @@ h1 {
 }
 #adoptText {
 	margin: 3rem;
+	text-align: center;
+
 }
 footer {
 	margin-top: 5rem;
@@ -128,7 +130,6 @@ footer {
 }
 @media screen and (max-width: 415px) { /*Nexus 6p*/
 	.petDiv {
-		width: 46%;
 		margin: .25rem;
 	}
 	h1 {
