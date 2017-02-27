@@ -14,7 +14,6 @@ html {
   height: 100%;
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
@@ -39,7 +38,7 @@ body {
 }
 
 h1 {
-	color: navy;
+	color: black;
 	font-size: 3rem;
 	font-weight: bold;
 	max-width: 100%;
@@ -48,28 +47,37 @@ h1 {
 }
 
 .sectionHeader {
-	margin-left: 2rem;
-	color: orange;
+	margin: 1rem;
+	color: #444;
 	font-size: 2rem;
 	font-weight: bold;
-	text-align: left;
+	text-align: center;
 }
 
 .sectionContainerDiv {
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
+	align-items: center;
 }
 
 #petsContainerDiv {
 	text-align: center; /* need this to center div children within */
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	width: 100%;
 }
 
 .petDiv {
+	border: 2px solid black;
 	display: inline-block;
 	min-height: 15rem;
 	width: 32%;
 	margin: 0 auto;
 	background-size: cover;
+	background-position: center;
+	max-height: 20rem;
+	list-style-type: none;
 }
 
 #pet1Div {
@@ -85,11 +93,22 @@ h1 {
 	background-image: url("images/pet3.jpeg");   		
 	
 }
-
+#pet4Div {
+	background-image: url("images/pet2.jpeg");   		
+	
+}
+#pet5Div {
+	background-image: url("images/pet1.jpeg");   		
+	
+}
+#pet6Div {
+	background-image: url("images/hoverCat.jpg");   		
+	
+}
 
 
 #adoptText {
-	margin-left: 3rem;
+	margin: 3rem;
 }
 
 footer {
@@ -112,9 +131,51 @@ footer {
 
 /* responsive media tags */
 /* make your site responive so that it looks good on various popular phones such as
-** the iphone 5, iphone 6, nexus 6P, and iPad. The smallest of these is the iphone5 which
+** the iphone 5 320px, iphone 6 375px, nexus 6P 412px, and iPad 768px. The smallest of these is the iphone5 which
 ** has a width of 320 pixels 
 */
-@media only screen and (max-width: 600px) {
-	
+@media screen and (max-width: 768px) { /*iPad*/
+	body {
+		
+	}
+	.petDiv {
+		width: 30%;
+		margin: .5rem;
+	}
+}
+@media screen and (max-width: 415px) { /*Nexus 6p*/
+	body {
+		
+	}
+	.petDiv {
+		width: 46%;
+		margin:.5rem;
+	}
+	h1 {
+		font-size: 34px;
+	}
+}
+@media screen and (max-width: 376px) { /*iPhone 6*/
+	body {
+		
+	}
+	.petDiv {
+		width: 95%;
+		margin: .5rem;
+	}
+	h1 {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 320px) { /*iPhone 5*/
+	body {
+		
+	}
+	.petDiv {
+		width: 100%;
+		margin: .5rem;
+	}
+	h1 {
+		font-size: 26px;
+	}
 }
