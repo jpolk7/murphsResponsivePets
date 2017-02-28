@@ -74,7 +74,7 @@ h1 {
 	list-style-type: none;
 }
 .petDiv:hover {
-    box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.5);
+    box-shadow: 0 0 8px 4px rgba(50, 50, 50, 0.5);
 }
 #pet1Div {
 	background-image: url("images/pet4.jpeg");   		
@@ -103,6 +103,7 @@ h1 {
 }
 footer {
 	margin-top: 5rem;
+
 }
 #footerCopyright {
 	text-align: center;
