@@ -94,6 +94,9 @@ h1 {
 #pet6Div {
 	background-image: url("images/hoverCat.jpg");   		
 }
+#pet7Div {
+	background-image: url("images/giphy.gif");   		
+}
 .hoverShadow: hover {
 	color: gray;
 }
